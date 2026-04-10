@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-border: oklch(0.25 0.01 260);
+  --color-background: oklch(0.1 0.01 260);
+  --color-foreground: oklch(0.9 0.01 260);
+  --color-primary: oklch(0.6 0.2 30);
+  --color-primary-foreground: oklch(1 0 0);
+  --color-card: oklch(0.15 0.01 260);
+  --color-card-foreground: oklch(0.9 0.01 260);
+  --color-popover: oklch(0.15 0.01 260);
+  --color-popover-foreground: oklch(0.9 0.01 260);
+  --color-muted: oklch(0.2 0.01 260);
+  --color-muted-foreground: oklch(0.6 0.01 260);
+  --color-accent: oklch(0.2 0.01 260);
+  --color-accent-foreground: oklch(0.9 0.01 260);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.2 0.01 260);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.25 0.01 260);
+}

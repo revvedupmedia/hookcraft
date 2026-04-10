@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD600"/>
+      <stop offset="0.4" stop-color="#FF5C00"/>
+      <stop offset="0.8" stop-color="#FF008A"/>
+      <stop offset="1" stop-color="#7000FF"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bg_grad)"/>
+
+  <!-- Stylized H -->
+  <g filter="url(#glow)">
+    <path d="M160 120C160 108.954 168.954 100 180 100H210C221.046 100 230 108.954 230 120V230C230 230 270 230 310 270C350 310 350 392 350 392C350 403.046 341.046 412 330 412H300C288.954 412 280 403.046 280 392V320C280 320 250 320 210 280C170 240 170 120 170 120" fill="white" fill-opacity="0.95" />
+    <path d="M340 120C340 108.954 348.954 100 360 100H390C401.046 100 410 108.954 410 120V392C410 403.046 401.046 412 390 412H360C348.954 412 340 403.046 340 392V120Z" fill="white" />
+    <path d="M160 256C160 256 230 256 280 256C330 256 410 256 410 256C410 256 410 310 360 310C310 310 230 210 160 210" stroke="white" stroke-width="50" stroke-linecap="round" />
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M380 70L385 90L405 95L385 100L380 120L375 100L355 95L375 90L380 70Z" fill="white" />
+  <path d="M430 130L433 145L448 148L433 151L430 166L427 151L412 148L427 145L430 130Z" fill="white" />
+</svg>
